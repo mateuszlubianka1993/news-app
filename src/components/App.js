@@ -7,6 +7,7 @@ import Home from './Home';
 import Science from './Science';
 import Sports from './Sports';
 import Technology from './Technology';
+import AppNav from './AppNav';
 
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
         <BrowserRouter>
           <div>
             <Header />
+            <AppNav />
             <Route path="/" exact component={Home} />
             <Route path="/entertainment" component={Entertainment} />
             <Route path="/health" component={Health} />
