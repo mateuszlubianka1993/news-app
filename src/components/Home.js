@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getTopHeadlines} from '../actions/index';
+import './NewsItem';
+import NewsItem from './NewsItem';
 
 class Home extends React.Component {
 
@@ -10,11 +12,10 @@ class Home extends React.Component {
 
     render() {
         const {topHeadlines} = this.props;
-        const renderX = topHeadlines.map((x)=><div>{x.title}</div>)
+        const renderNews = topHeadlines.map((news, index) => <NewsItem key={index} news={news} />)
         return(
             <div>
-                Home
-                {renderX}
+                {renderNews}
             </div>
         );
     };

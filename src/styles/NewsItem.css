@@ -1,0 +1,9 @@
+.card-box {
+    width: 800px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.mask {
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+}
