@@ -9,6 +9,7 @@ export const getTopHeadlines = () => async dispatch => {
             pageSize: 10,
             apiKey: newsAPIkey
         }
+    });
     const result = response.articles;
 
     dispatch({type: 'GET_TOP_HEADLINES', payload: result })
