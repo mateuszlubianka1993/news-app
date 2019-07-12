@@ -4,14 +4,17 @@ import {getTopHeadlines} from '../actions/index';
 
 class Home extends React.Component {
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.getTopHeadlines();
     };
 
     render() {
+        const {topHeadlines} = this.props;
+        const renderX = topHeadlines.map((x)=><div>{x.title}</div>)
         return(
             <div>
                 Home
+                {renderX}
             </div>
         );
     };
