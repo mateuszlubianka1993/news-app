@@ -1,8 +1,11 @@
-a{
+.menu-items{
     color: rgba(255,255,255,.7);
     text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
 }
-a:hover {
+.menu-items:hover {
     color: rgba(255,255,255);
     text-decoration: none;
+    border-bottom: 2px solid #fff;
 }

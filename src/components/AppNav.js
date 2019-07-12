@@ -9,29 +9,29 @@ class AppNav extends React.Component {
             <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark" sticky="top">
                 <Container>
                     <Navbar.Brand>
-                        <Link to="/">News App</Link>
+                        <Link to="/" className="menu-items">News App</Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                 </Container>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav pullRight>
                         <Nav.Link >
-                            <Link to="/">Home</Link>
+                            <Link to="/" className="menu-items">Home</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link to="/entertainment">Entertainment</Link>
+                            <Link to="/entertainment" className="menu-items">Entertainment</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link to="/health">Health</Link>
+                            <Link to="/health" className="menu-items">Health</Link>
                         </Nav.Link>
                         <Nav.Link >
-                            <Link to="/science">Science</Link>
+                            <Link to="/science" className="menu-items">Science</Link>
                         </Nav.Link>
-                            <Nav.Link >
-                        <Link to="/sports">Sports</Link>
-                            </Nav.Link>
                         <Nav.Link >
-                            <Link to="/technology">Technology</Link>
+                            <Link to="/sports" className="menu-items">Sports</Link>
+                        </Nav.Link>
+                        <Nav.Link >
+                            <Link to="/technology" className="menu-items">Technology</Link>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
