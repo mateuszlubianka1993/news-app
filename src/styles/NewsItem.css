@@ -1,9 +1,11 @@
 .card-box {
     width: 800px;
-    margin-bottom: 30px;
-    padding: 10px;
+    margin: 15px auto;
+    padding: 15px;
 }
-.mask {
-    background-color: rgba(0,0,0,0.6);
-    position: absolute;
+.card-footer {
+    margin-top: 10px;
+}
+.news-img {
+    margin-bottom: 10px;
 }
