@@ -28,3 +28,10 @@ export const getNews = (type) => async dispatch => {
 
     dispatch({type: 'GET_NEWS', payload: result})
 };
+
+export const getInputValue = (data) => {
+    return {
+        type: 'GET_INPUT_VALUE',
+        payload: data
+    }
+};
