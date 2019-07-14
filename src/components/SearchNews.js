@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {getInputValue} from '../actions';
+import {getInputValue, getSearched} from '../actions';
 import {Button, Container, FormControl, InputGroup} from 'react-bootstrap';
 
 class SearchNews extends React.Component {
@@ -26,8 +26,9 @@ class SearchNews extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
+        inputValue: state.inputValue,
         searched: state.searched
     }
 }
 
-export default connect(mapStateToProps, {getInputValue}) (SearchNews);
+export default connect(mapStateToProps, {getInputValue, getSearched}) (SearchNews);
