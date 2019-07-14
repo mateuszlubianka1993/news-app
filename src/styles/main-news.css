@@ -1,0 +1,15 @@
+.news-container {
+    background-color: #6B7484;
+    margin-top:  20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.news-header {
+    padding: 25px 5px;
+    color: #00283D;
+}
+.news-header-txt {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #00283D;
+}

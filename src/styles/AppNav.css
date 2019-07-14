@@ -4,6 +4,9 @@
     padding: 5px;
     transition: all 0.3s ease-in-out;
 }
+.bg-secondary {
+    background-color: #00283D!important;
+}
 .menu-items:hover {
     color: rgba(255,255,255);
     text-decoration: none;

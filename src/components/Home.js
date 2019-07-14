@@ -2,8 +2,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {getTopHeadlines} from '../actions/index';
 import Carousel from 'react-bootstrap/Carousel';
-import {Button, Card} from 'react-bootstrap';
+import {Button, Card, Container} from 'react-bootstrap';
 import '../styles/Home.css';
+import '../styles/main-news.css';
 
 class Home extends React.Component {
 
@@ -32,11 +33,14 @@ class Home extends React.Component {
             )
         })
         return(
-            <div>
+            <Container className="news-container">
+                <Container className="news-header">
+                    <h2 className="news-header-txt">Top Headlines</h2>
+                </Container>
                 <Carousel className="news-carousel">
                     {renderNews}
                 </Carousel>
-            </div>
+            </Container>
         );
     };
 }

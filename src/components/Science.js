@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {getNews} from '../actions/index';
 import NewsItem from './NewsItem';
+import {Container} from 'react-bootstrap';
 
 class Science extends React.Component {
 
@@ -13,9 +14,12 @@ class Science extends React.Component {
         const {news} = this.props;
         const renderNews = news.map((news, index) => <NewsItem key={index} news={news} />)
         return(
-            <div>
+            <Container className="news-container">
+                <Container className="news-header">
+                    <h2 className="news-header-txt">Science News</h2>
+                </Container>
                 {renderNews}
-            </div>
+            </Container>
         );
     };
 }
