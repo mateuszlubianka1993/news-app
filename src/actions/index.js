@@ -35,3 +35,16 @@ export const getInputValue = (data) => {
         payload: data
     }
 };
+
+export const getSearched = (e, value) => async dispatch => {
+    const response = await newsAPI.get('/everything',{
+        params: {
+            q: value,
+            pageSize: 10,
+            apiKey: newsAPIkey
+        }
+    });
+    const result = response.data.articles;
+
+    dispatch({type: 'GET_SEARCHED', payload: result})
+};
