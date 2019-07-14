@@ -1,5 +1,6 @@
 .card-box {
-    width: 800px;
+    /* width: 800px; */
+    width: 75%;
     margin: 15px auto;
     padding: 15px;
 }
@@ -8,4 +9,17 @@
 }
 .news-img {
     margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .card-box {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .card-box {
+        padding: 8px;
+    }
 }

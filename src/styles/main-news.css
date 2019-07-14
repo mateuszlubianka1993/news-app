@@ -13,3 +13,9 @@
     padding-bottom: 10px;
     border-bottom: 3px solid #00283D;
 }
+
+@media (max-width: 576px) {
+    .news-header-txt {
+        font-size: 1.75rem;
+    }
+}

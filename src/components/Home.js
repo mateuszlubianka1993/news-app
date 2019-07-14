@@ -24,7 +24,7 @@ class Home extends React.Component {
                     />
                     <Carousel.Caption className="carousel-txt">
                         <h3>{news.title}</h3>
-                        <p>{news.description}</p>
+                        <p className="carousel-description" >{news.description}</p>
                         <Card.Link href={news.url} target="_blank" >
                             <Button >Full News</Button>
                         </Card.Link>

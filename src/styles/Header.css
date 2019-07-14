@@ -6,3 +6,11 @@
     text-align: center;
     color: #00283D;
 } 
+@media (max-width: 576px) {
+    .header-container {
+        padding: 12px 5px;
+    }
+    .header-txt {
+        font-size: 2.2rem;
+    }
+}

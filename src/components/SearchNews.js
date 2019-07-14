@@ -20,7 +20,7 @@ class SearchNews extends React.Component {
                         aria-describedby="basic-addon2"
                     />
                     <InputGroup.Append>
-                        <Button type="submit" variant="outline-secondary" className="search-btn">Button</Button>
+                        <Button type="submit" variant="outline-secondary" className="search-btn">Search</Button>
                     </InputGroup.Append>
                 </InputGroup>
                 </form>

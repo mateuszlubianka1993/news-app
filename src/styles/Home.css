@@ -9,3 +9,36 @@
 .carousel-caption {
     background-color: rgba(0,0,0,0.6);
 }
+
+@media (max-width: 992px) {
+    .news-carousel {
+        width: 680px;
+    }
+}
+@media (max-width: 768px) {
+    .news-carousel {
+        width: 510px;
+        font-size: 85%;
+    }
+    .news-carousel h3 {
+        font-size: 1.25rem;
+    }
+    .carousel-photo {
+        height: 300px;
+    }
+}
+@media (max-width: 576px) {
+    .news-carousel {
+        width: 99%;
+        font-size: 80%;
+    }
+    .news-carousel h3 {
+        font-size: 1rem;
+    }
+    .carousel-photo {
+        height: 230px;
+    }
+    .carousel-description {
+        display: none;
+    }
+}
