@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {getInputValue, getSearched} from '../actions';
 import {Button, Container, FormControl, InputGroup} from 'react-bootstrap';
 import NewsItem from './NewsItem';
+import '../styles/main-news.css';
+import '../styles/SearchNews.css';
 
 class SearchNews extends React.Component {
     render() {
@@ -10,7 +12,7 @@ class SearchNews extends React.Component {
         const renderNews = searched.map((news, index) => <NewsItem key={index} news={news} />)
         return(
             <Container className="news-container">
-                <form onSubmit={(e)=>this.props.getSearched(e, inputValue)}>
+                <form onSubmit={(e)=>this.props.getSearched(e, inputValue)} className="news-form">
                 <InputGroup className="mb-3" onChange={(e)=>this.props.getInputValue(e.target.value)}>
                     <FormControl
                         placeholder="Search News"
@@ -18,7 +20,7 @@ class SearchNews extends React.Component {
                         aria-describedby="basic-addon2"
                     />
                     <InputGroup.Append>
-                        <Button type="submit" variant="outline-secondary">Button</Button>
+                        <Button type="submit" variant="outline-secondary" className="search-btn">Button</Button>
                     </InputGroup.Append>
                 </InputGroup>
                 </form>

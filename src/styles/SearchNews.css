@@ -1,0 +1,11 @@
+.news-form {
+    padding: 20px 5px;
+}
+.search-btn {
+    background-color: #B8C900;
+    color: #00283D;
+}
+.search-btn:hover {
+    background-color: #00283D;
+    color: #B8C900;
+}
