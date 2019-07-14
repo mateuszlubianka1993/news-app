@@ -8,6 +8,7 @@ import Science from './Science';
 import Sports from './Sports';
 import Technology from './Technology';
 import AppNav from './AppNav';
+import SearchNews from './SearchNews';
 
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path="/science" component={Science} />
             <Route path="/sports" component={Sports} />
             <Route path="/technology" component={Technology} />
+            <Route path="/search" component={SearchNews} />
           </div>
         </BrowserRouter>
       </div>

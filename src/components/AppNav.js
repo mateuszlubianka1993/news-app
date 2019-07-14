@@ -33,6 +33,9 @@ class AppNav extends React.Component {
                         <Nav.Link >
                             <Link to="/technology" className="menu-items">Technology</Link>
                         </Nav.Link>
+                        <Nav.Link >
+                            <Link to="/search" className="menu-items">Search</Link>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
