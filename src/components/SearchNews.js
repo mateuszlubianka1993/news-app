@@ -2,23 +2,27 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {getInputValue, getSearched} from '../actions';
 import {Button, Container, FormControl, InputGroup} from 'react-bootstrap';
+import NewsItem from './NewsItem';
 
 class SearchNews extends React.Component {
     render() {
+        const {inputValue, searched} = this.props;
+        const renderNews = searched.map((news, index) => <NewsItem key={index} news={news} />)
         return(
             <Container className="news-container">
-                <form>
-                <InputGroup className="mb-3">
+                <form onSubmit={(e)=>this.props.getSearched(e, inputValue)}>
+                <InputGroup className="mb-3" onChange={(e)=>this.props.getInputValue(e.target.value)}>
                     <FormControl
                         placeholder="Search News"
                         aria-label="Search News"
                         aria-describedby="basic-addon2"
                     />
                     <InputGroup.Append>
-                        <Button variant="outline-secondary">Button</Button>
+                        <Button type="submit" variant="outline-secondary">Button</Button>
                     </InputGroup.Append>
                 </InputGroup>
                 </form>
+                {renderNews}
             </Container>
         );
     };

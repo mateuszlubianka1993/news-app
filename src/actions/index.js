@@ -37,6 +37,7 @@ export const getInputValue = (data) => {
 };
 
 export const getSearched = (e, value) => async dispatch => {
+    e.preventDefault();
     const response = await newsAPI.get('/everything',{
         params: {
             q: value,
