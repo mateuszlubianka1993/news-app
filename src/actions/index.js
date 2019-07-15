@@ -19,7 +19,7 @@ export const getNews = (type) => async dispatch => {
     const response = await newsAPI.get('/top-headlines',{
         params: {
             country: 'us',
-            pageSize: 7,
+            pageSize: 6,
             category: type,
             apiKey: newsAPIkey
         }
@@ -41,7 +41,7 @@ export const getSearched = (e, value) => async dispatch => {
     const response = await newsAPI.get('/everything',{
         params: {
             q: value,
-            pageSize: 7,
+            pageSize: 6,
             apiKey: newsAPIkey
         }
     });
