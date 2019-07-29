@@ -16,11 +16,11 @@ class Home extends React.Component {
         const {topHeadlines} = this.props;
         const renderNews = topHeadlines.map((news, index) => {
             return(
-                <Carousel.Item>
+                <Carousel.Item key={index}>
                     <img
                         className="d-block w-100 carousel-photo"
                         src={news.urlToImage}
-                        alt="First slide"
+                        alt="slide"
                     />
                     <Carousel.Caption className="carousel-txt">
                         <h3>{news.title}</h3>
