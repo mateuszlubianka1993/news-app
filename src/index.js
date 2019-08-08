@@ -10,6 +10,6 @@ import App from './components/App';
 const store = createStore(reducers, applyMiddleware(thunk));
 
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store={store} basename={process.env.PUBLIC_URL}>
         <App />
     </Provider>, document.getElementById('root'));
