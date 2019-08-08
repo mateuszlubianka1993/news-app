@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > Hi everyone! This is my The News App. 
 
 ## Live
+https://mateuszlubianka1993.github.io/news-app/
 https://news-app-x.herokuapp.com/
 
 ## Technologies:
